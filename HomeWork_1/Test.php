@@ -30,8 +30,10 @@
       </ul>
     </div>
   </nav>
-  <h3>Задание 1</h3>
+
   <div class="container-fluid">
+  <h3>Задание 1</h3>
+  <h4>Нажатие кнопки не требуется так как действия отслеживаются нажатий клавиатуры в полях</h4>
     <form class="form-inline">
       <div class="form-group">
         <input type="number" class="form-control" id="R" max="255" min="0" aria-describedby="RColor" placeholder="Enter R">
@@ -42,19 +44,19 @@
       <div class="form-group">
         <input type="number" class="form-control" id="B" max="255" min="0" placeholder="Enter B">
       </div>
-    
+
   </div>
 
   </form>
   </div>
   <br/>
-  
+
       <div class="alert alert-warning alert-dismissible fade show" id="errorBlockAlert" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
         </button>
-        <strong>Внимание</strong> 
+        <strong>Внимание</strong>
         <p id="Errors"><p>
       </div>
 
@@ -65,7 +67,7 @@
       <h4>
       <span id="phpBackground" >Раскраска для маленьких програмистов</span>
       </h4>
-      
+
         <!--
 class="text-white bg-dark"
         -->
@@ -82,23 +84,23 @@ class="text-white bg-dark"
     crossorigin="anonymous"></script>
   <script>
   $(document).ready(function () {
-    $('#R').keyup(function (e) { 
+    $('#R').keyup(function (e) {
       var r=$('#R').val();
       var g=$('#G').val();
       var b=$('#B').val();
-      getColor(r,g,b);  
+      getColor(r,g,b);
     });
-    $('#G').keyup(function (e) { 
+    $('#G').keyup(function (e) {
       var r=$('#R').val();
       var g=$('#G').val();
       var b=$('#B').val();
-      getColor(r,g,b);  
+      getColor(r,g,b);
     });
-    $('#B').keyup(function (e) { 
+    $('#B').keyup(function (e) {
       var r=$('#R').val();
       var g=$('#G').val();
       var b=$('#B').val();
-      getColor(r,g,b);  
+      getColor(r,g,b);
     });
     function getColor(r,g,b){
       if(r<=255 && g<=255 && b<=255){
@@ -111,9 +113,9 @@ class="text-white bg-dark"
         url: "Home.php",
         data: {R:r,G:g,B:b},
         success: function (response) {
-          var data =JSON.parse(response);
+          var data = JSON.parse(response);
           $('#phpBackground').removeClass('bg-dark');
-          
+
           console.log(data);
           $('#phpBackground').css('background-color', data.rgb);
           $('#phpBackground').css('color', data.font_color);
@@ -129,7 +131,7 @@ class="text-white bg-dark"
 
   });
   </script>
-  
+
 <script>
 </script>
 </body>
