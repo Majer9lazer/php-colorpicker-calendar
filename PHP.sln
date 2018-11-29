@@ -4,10 +4,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork_1", "HomeWork_1", "{518B3C73-D28D-4C33-96FA-CD80952E69C5}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\PHP\HomeWork_1\Home.php = ..\..\..\Desktop\PHP\HomeWork_1\Home.php
+		..\..\..\Desktop\PHP\HomeWork_1\Task2.php = ..\..\..\Desktop\PHP\HomeWork_1\Task2.php
+		..\..\..\Desktop\PHP\HomeWork_1\Test.php = ..\..\..\Desktop\PHP\HomeWork_1\Test.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{5C35FEC6-8D2F-4452-B6AD-BFA5006B999E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\PHP\HomeWork_1\js\jquery-3.3.1.min.js = ..\..\..\Desktop\PHP\HomeWork_1\js\jquery-3.3.1.min.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C35FEC6-8D2F-4452-B6AD-BFA5006B999E} = {518B3C73-D28D-4C33-96FA-CD80952E69C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDB44DD4-33F5-46A5-94D7-92C808CD20D9}
