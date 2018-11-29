@@ -15,11 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{5C35FEC6-8D2F-
 		..\..\..\Desktop\PHP\HomeWork_1\js\jquery-3.3.1.min.js = ..\..\..\Desktop\PHP\HomeWork_1\js\jquery-3.3.1.min.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{631D5DED-0DF8-40B9-8FB1-A9D239E823E3}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{518B3C73-D28D-4C33-96FA-CD80952E69C5} = {631D5DED-0DF8-40B9-8FB1-A9D239E823E3}
 		{5C35FEC6-8D2F-4452-B6AD-BFA5006B999E} = {518B3C73-D28D-4C33-96FA-CD80952E69C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
